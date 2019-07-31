@@ -1,0 +1,67 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#short-url-id{
+  margin: auto;
+}
+#urlInput{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  z-index: 10;
+}
+
+
+.form-group{
+  padding: 0;
+  margin: 0;
+}
+.btn-on-left{
+  border-left-width: 0px;
+  padding-left: 12px;
+  z-index: 2;
+  margin-left: -2px;
+}
+
+.tip {
+  position: relative;
+  display: inline-block;
+}
+
+.tip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 11;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
