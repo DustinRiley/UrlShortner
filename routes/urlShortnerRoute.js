@@ -1,9 +1,6 @@
 var express = require('express');
 const UrlShort = require('../model/url-data');
-const Counter = require('../model/counter');
 var router = express.Router();
-var incrament = require('../incramentor');
-const nanoid = require('nanoid');
 var validator = require('validator');
 const generate = require('nanoid/generate')
 const legalChars ='ABCDEFGHIJKLMONPQRSTUVWYXZabcdefghijklmnopqrstuvwyxz0123456789'
