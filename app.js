@@ -7,7 +7,7 @@ let mongoose = require('mongoose');
 const urlShortnerRoute = require('./routes/urlShortnerRoute');
 
 
-const mongoUrl = 'mongodb://localhost:27017/url-short-db';
+const mongoUrl = "mongodb+srv://herokuUser:shortentmyurl@urls-xo2pm.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(mongoUrl, { useNewUrlParser: true }, function (err) {
   if (err) {
     console.log("Error connecting to MongoDB");
