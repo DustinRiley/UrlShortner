@@ -16,7 +16,19 @@ a {
   z-index: 10;
 }
 
-
+#shortenForm{
+  left: 50%;
+  transform: translateX(-50%);
+}
+.title-container{
+  text-align: center;
+}
+.large-text{
+  font-size: 2.5em;
+}
+.disclaimer-text{
+  font-size: 0.75em;
+}
 .form-group{
   padding: 0;
   margin: 0;
@@ -31,11 +43,13 @@ a {
 .tip {
   position: relative;
   display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tip .tooltiptext {
   visibility: hidden;
-  width: 140px;
+  width: 400px;
   background-color: #555;
   color: #fff;
   text-align: center;
