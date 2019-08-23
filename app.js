@@ -5,9 +5,15 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 let mongoose = require('mongoose');
 const urlShortnerRoute = require('./routes/urlShortnerRoute');
+var options = require('./options');
 
+var loginData = {
+  host: options.storageConfig.host,
+  user: options.storageConfig.user,
+  password: options.storageConfig.password
+};
 
-const mongoUrl = "mongodb+srv://herokuUser:shortentmyurl@urls-xo2pm.mongodb.net/test?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://"+loginData.user+":"+loginData.password+"@"+loginData.host;
 mongoose.connect(mongoUrl, { useNewUrlParser: true }, function (err) {
   if (err) {
     console.log("Error connecting to MongoDB");

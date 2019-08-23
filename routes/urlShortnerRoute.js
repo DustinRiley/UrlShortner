@@ -3,7 +3,9 @@ const UrlShort = require('../model/url-data');
 var router = express.Router();
 var validator = require('validator');
 const generate = require('nanoid/generate')
-const legalChars ='ABCDEFGHIJKLMONPQRSTUVWYXZabcdefghijklmnopqrstuvwyxz0123456789'
+const legalChars ='ABCDEFGHIJKLMONPQRSTUVWYXZabcdefghijklmnopqrstuvwyxz0123456789';
+
+
 
 /*RENDER INDEX*/
 router.get('/', (req,res)=>{

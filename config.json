@@ -1,0 +1,5 @@
+{
+    "host": "urls-xo2pm.mongodb.net/test?retryWrites=true&w=majority",
+    "user": "herokuUser",
+    "password": "shortentmyurl"
+  }
