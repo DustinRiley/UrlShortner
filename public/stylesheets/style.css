@@ -7,6 +7,12 @@ a {
   color: #00B7FF;
 }
 
+#url-error-alert{
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+
 #short-url-id{
   margin: auto;
 }

@@ -14,6 +14,12 @@ $(function ready() {
                 if(json.status=='Success'){
                     $('#short-url-id').val(json.shorturl);
                     $('#myTooltip').text('Click To Copy');
+                    $('#myTooltip').removeAttr('hidden');
+                    $('#url-error-alert').hide();
+                }
+                else if(json.status==='Error'){
+                    $('#url-error-alert').show();
+                    $('#url-error-alert').text(json.msg);
                 }
             },
             error: function (request, status) {

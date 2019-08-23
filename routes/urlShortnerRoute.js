@@ -29,7 +29,7 @@ router.post('/short', (req, res) => {
         short.save(short, (err)=> {
             if (err) {
                 console.log(err);
-                res.status(500).json({error : "Oops!"});
+                res.status(500).json({status : "Error" ,Msg:'Invalid Url'});
                 return;
             }
             res.json({

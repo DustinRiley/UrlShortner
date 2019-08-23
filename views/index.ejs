@@ -19,12 +19,14 @@
         <div class="form-group col-sm-12 col-md-8">
           <label for="urlInput"></label>
           <input type="url" class="form-control text-url col-sm-12" id="urlInput" aria-describedby="emailHelp" placeholder="Enter url you want to shorten">
+          
         </div>
         <button type="submit" class="btn btn-success btn-shorten col-sm-12 col-md-4 btn-on-left">Shorten Me</button>
+        <div class="alert alert-danger col-sm-12" id='url-error-alert'role="alert" hidden></div>
       </form>
       <div class="tip col-sm-8" onclick="copyElem('#short-url-id')">
          <input id='short-url-id' class="form-control text-center" type="text" placeholder="Short URL" readonly  >
-         <span class="tooltiptext" id="myTooltip">Click To Copy</span>
+         <span class="tooltiptext" id="myTooltip" hidden>Click To Copy</span>
       </div>
       <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
